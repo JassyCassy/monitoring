@@ -23,6 +23,4 @@ spec:
     release: prometheus
   type: "ClusterIP"
   sessionAffinity: None
-  ipFamilies:
-    - IPv4
-  ipFamilyPolicy: SingleStack
+

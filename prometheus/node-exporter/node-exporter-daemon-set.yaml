@@ -5,8 +5,6 @@ metadata:
     component: "node-exporter"
     app: prometheus
     release: prometheus
-    chart: prometheus-14.11.1
-    heritage: Helm
   name: prometheus-node-exporter
   namespace: prometheus
 spec:
@@ -23,8 +21,6 @@ spec:
         component: "node-exporter"
         app: prometheus
         release: prometheus
-        chart: prometheus-14.11.1
-        heritage: Helm
     spec:
       serviceAccountName: prometheus-node-exporter
       containers:
