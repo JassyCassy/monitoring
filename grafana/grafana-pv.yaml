@@ -1,19 +1,22 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: grafana-pv
+  name: grafana
   labels:
     topology.kubernetes.io/region: us-east-1
     topology.kubernetes.io/zone: us-east-1a
 spec:
   capacity:
     storage: 10Gi
+  awsElasticBlockStore:
+    volumeID: 'aws://us-east-1a/vol-0e4718a20920baf22'
+    fsType: ext4
   accessModes:
     - ReadWriteOnce
   claimRef:
     kind: PersistentVolumeClaim
     namespace: grafana
-    name: grafana-pvc
+    name: grafana
   persistentVolumeReclaimPolicy: Delete
   storageClassName: gp2
   volumeMode: Filesystem
