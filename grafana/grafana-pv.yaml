@@ -5,6 +5,7 @@ metadata:
   labels:
     topology.kubernetes.io/region: us-east-1
     topology.kubernetes.io/zone: us-east-1a
+    name: grafana
 spec:
   capacity:
     storage: 10Gi
