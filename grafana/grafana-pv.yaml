@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: grafana-pv
+  labels:
+    topology.kubernetes.io/region: us-east-1
+    topology.kubernetes.io/zone: us-east-1a
+spec:
+  capacity:
+    storage: 10Gi
+  accessModes:
+    - ReadWriteOnce
+  claimRef:
+    kind: PersistentVolumeClaim
+    namespace: grafana
+    name: grafana-pvc
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: gp2
+  volumeMode: Filesystem
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: topology.kubernetes.io/zone
+              operator: In
+              values:
+                - us-east-1a
+            - key: topology.kubernetes.io/region
+              operator: In
+              values:
+                - us-east-1
