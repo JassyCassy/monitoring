@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: prometheus-alertmanager
+  labels:
+    topology.kubernetes.io/region: us-east-1
+    topology.kubernetes.io/zone: us-east-1a
+spec:
+  capacity:
+    storage: 2Gi
+  awsElasticBlockStore:
+    volumeID: 'aws://us-east-1a/vol-01b31ebf69c4be1cc'
+    fsType: ext4
+  accessModes:
+    - ReadWriteOnce
+  claimRef:
+    kind: PersistentVolumeClaim
+    namespace: prometheus
+    name: prometheus-alertmanager
+  persistentVolumeReclaimPolicy: Delete
+  storageClassName: gp2
+  volumeMode: Filesystem
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: topology.kubernetes.io/zone
+              operator: In
+              values:
+                - us-east-1a
+            - key: topology.kubernetes.io/region
+              operator: In
+              values:
+                - us-east-1
