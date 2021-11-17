@@ -8,9 +8,6 @@ metadata:
 spec:
   capacity:
     storage: 2Gi
-  awsElasticBlockStore:
-    volumeID: 'aws://us-east-1a/vol-01b31ebf69c4be1cc'
-    fsType: ext4
   accessModes:
     - ReadWriteOnce
   claimRef:
@@ -20,15 +17,4 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: gp2
   volumeMode: Filesystem
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-        - matchExpressions:
-            - key: topology.kubernetes.io/zone
-              operator: In
-              values:
-                - us-east-1a
-            - key: topology.kubernetes.io/region
-              operator: In
-              values:
-                - us-east-1
+  

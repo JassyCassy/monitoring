@@ -3,14 +3,9 @@ kind: PersistentVolume
 metadata:
   name: prometheus-server
   labels:
-    topology.kubernetes.io/region: us-east-1
-    topology.kubernetes.io/zone: us-east-1b
 spec:
   capacity:
     storage: 8Gi
-  awsElasticBlockStore:
-    volumeID: 'aws://us-east-1a/vol-0278514b5cd8d2a0c'
-    fsType: ext4
   accessModes:
     - ReadWriteOnce
   claimRef:
@@ -20,15 +15,4 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: gp2
   volumeMode: Filesystem
-  nodeAffinity:
-    required:
-      nodeSelectorTerms:
-        - matchExpressions:
-            - key: topology.kubernetes.io/zone
-              operator: In
-              values:
-                - us-east-1b
-            - key: topology.kubernetes.io/region
-              operator: In
-              values:
-                - us-east-1
+  
