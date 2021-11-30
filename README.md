@@ -52,5 +52,5 @@ Solution: The cluster wasn't able to mount EBS volume from AWS, because of the e
 
 
 
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Favmconsulting-blog%2Fhow-to-monitor-kubernetes-cluster-with-prometheus-and-grafana-8ec7e060896f&psig=AOvVaw0P1nzghEaS8EGPf8cHhMYi&ust=1638328658824000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLibr72Qv_QCFQAAAAAdAAAAABAJ)
+![alt text](https://miro.medium.com/max/1400/0*vI372SmIRwgT2A4Q.jpeg)
 
