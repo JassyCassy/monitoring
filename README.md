@@ -1,6 +1,9 @@
 
 ### Monitoring using prometheus and grafana with kubernetes on AWS EKS cluster.
+
+
 ![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fnerd-for-tech%2Freal-time-monitoring-using-prometheus-grafana-ca2ff2d6be03&psig=AOvVaw2y2-Lr2a8Tqmqk24U86Q1p&ust=1638327943979000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiP9bCNv_QCFQAAAAAdAAAAABAD)
+
 
 ## What is prometheus?
 
@@ -15,7 +18,9 @@ Prometheus is a free software application used for event monitoring and alerting
 
 To set up prometheus we will us YAML files and Makefile.
 
+
 ![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.whitelabeldevelopers.tech%2Fgrafana&psig=AOvVaw1lBJJeCNOCbpz8ljPurBCh&ust=1638328077083000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPi4v-6Nv_QCFQAAAAAdAAAAABAE)
+
 
 ## What is Grafana?
 
@@ -46,4 +51,6 @@ Solution: By mistake, ClusterRole in EKS was deleted. The cluster did not have p
 Solution: The cluster wasn't able to mount EBS volume from AWS, because of the earlier deleted ClusterRole.
 
 
+
 ![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Favmconsulting-blog%2Fhow-to-monitor-kubernetes-cluster-with-prometheus-and-grafana-8ec7e060896f&psig=AOvVaw0P1nzghEaS8EGPf8cHhMYi&ust=1638328658824000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLibr72Qv_QCFQAAAAAdAAAAABAJ)
+
