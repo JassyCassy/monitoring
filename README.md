@@ -2,7 +2,7 @@
 ### Monitoring using prometheus and grafana with kubernetes on AWS EKS cluster.
 
 
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fnerd-for-tech%2Freal-time-monitoring-using-prometheus-grafana-ca2ff2d6be03&psig=AOvVaw2y2-Lr2a8Tqmqk24U86Q1p&ust=1638327943979000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiP9bCNv_QCFQAAAAAdAAAAABAD)
+![alt text](https://miro.medium.com/max/1400/0*xmJhkI0IbRmbnlcG.png)
 
 
 ## What is prometheus?
