@@ -19,7 +19,7 @@ Prometheus is a free software application used for event monitoring and alerting
 To set up prometheus we will us YAML files and Makefile.
 
 
-![alt text](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.whitelabeldevelopers.tech%2Fgrafana&psig=AOvVaw1lBJJeCNOCbpz8ljPurBCh&ust=1638328077083000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPi4v-6Nv_QCFQAAAAAdAAAAABAE)
+![alt text](https://www.whitelabeldevelopers.tech/upload/glossary/384/headimg.webp)
 
 
 ## What is Grafana?
