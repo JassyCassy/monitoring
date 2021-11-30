@@ -1,5 +1,5 @@
 
-### Monitoring using prometheus and grafana with kubernetes on AWS EKS cluster.
+##### Monitoring using prometheus and grafana with kubernetes on AWS EKS cluster.
 
 
 ![alt text](https://miro.medium.com/max/1400/0*xmJhkI0IbRmbnlcG.png)
