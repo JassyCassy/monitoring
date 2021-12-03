@@ -9,7 +9,7 @@
 
 Prometheus is a free software application used for event monitoring and alerting. Prometheus collects and stores metrics. Prometheus is not intended as a dashboarding solution. Although it can be used to graph specific queries, it is not a full-fledged dashboarding solution and needs to be hooked up with Grafana to generate dashboards.
 
-# We want Prometheus to collect metrics related to the Kubernetes services, nodes, and orchestration status. Prometheus Components:
+### We want Prometheus to collect metrics related to the Kubernetes services, nodes, and orchestration status. Prometheus Components:
 
 - Kube-state-metrics --> for orchestration and cluster level metrics: deployments, pod metrics, resource reservation, etc.
 - Node exporter --> for the classical host-related metrics: cpu, mem, network, etc.
